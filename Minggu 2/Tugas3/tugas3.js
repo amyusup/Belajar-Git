@@ -73,4 +73,4 @@ const check = (params, metode, callback) => {
 };
 
 check(3, "TRYCATCH", cekPrima);
-check(4, "TRYCATCH", cekGanjilGenap);
+check(6, "TRYCATCH", cekGanjilGenap);
