@@ -1,0 +1,9 @@
+1. User membuka program
+2. User dihadapkan dengan form input
+3. Pemeriksaan terhadap hasil input user
+4. Proses perubahan input user menjadi array
+5. Membuat variabel untuk mengembalikan input user menjadi teks biasa
+6. Menghitung banyaknya kata yang di input user
+7. Proses reverse words hasil input user
+8. output hasil reverse words input user
+9. Program selesai

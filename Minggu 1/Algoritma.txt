@@ -1,0 +1,7 @@
+MENGHITUNG KATA
+
+
+var teks = "Saya belajar javascript".split(" ");
+for(let x = teks.length -1; x>=0; x--){
+  console.log(teks[x]);
+}

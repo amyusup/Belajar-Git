@@ -1,0 +1,9 @@
+1. User membuka program
+2. User dihadapkan dengan form input
+3. Pemeriksaan terhadap hasil input user
+4. Menghitung banyaknya karakter yang di input user
+5. Proses reverse hasil input user
+6. Membandingkan hasil reverse dengan hasil input user
+- Jika sama maka output "Palindrom"
+- Jika tidak maka output "Bukan palindrom"
+7. Program selesai
