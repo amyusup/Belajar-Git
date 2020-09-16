@@ -1,15 +1,25 @@
 divideAndSort = (params) => {
-    params = params.toString()
-    var batas = params.split("0");
-    
-    var hasilBatas = ""
-    for(let i = 0; i < batas.length; i++) {
-        var splitBatas = batas[i].split("")
-        var sortBatas = splitBatas.sort()
-         hasilBatas = hasilBatas + sortBatas.join("")
+  params = params.toString();
+  params = params + "0";
+  var hasilBatas = "";
+  var hasilArray = [];
+  for (let i = 0; i < params.length; i++) {
+    if (params[i] === "0") {
+      hasilArray.push(hasilBatas);
+
+      hasilBatas = "";
+    } else {
+      hasilBatas = hasilBatas + params[i];
     }
-    console.log(hasilBatas)
-  
+  }
+
+  console.log(hasilArray);
+  var hasilAkhir = "";
+
+  hasilArray.map((item) => {
+    hasilAkhir = hasilAkhir + "" + Array.from(item).sort();
+  });
+  console.log(hasilAkhir.replace(/,/gi, ""));
 };
-  
-  divideAndSort(5956560159466056)
+
+divideAndSort(5956560159466056);

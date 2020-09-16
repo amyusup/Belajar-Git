@@ -32,10 +32,15 @@ const getMonth = (callback) => {
 };
 
 const cetak = (err, params) => {
-  params.map((item) => {
-    console.log(item);
-  });
+  if (err == null) {
+    params.map((item) => {
+      console.log(item);
+    });
+  }else{
+    console.log(err.message)
+  }
 };
+
 
 getMonth();
 getMonth("cetak");

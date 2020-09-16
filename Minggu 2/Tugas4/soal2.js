@@ -1,16 +1,32 @@
 reverseWords = (params) => {
-  var kalimat = params.split(" ");
-  var hasil = "";
-  for (let x = kalimat.length - 1; x >= 0; x--) {
-    hasil = hasil + " " + kalimat[x];
+  if (params == undefined) {
+    console.log("Parameter harus diisi");
+  } else {
+    if (typeof params != "string") {
+      console.log("Parameter harus bertipe string");
+    } else {
+      params = params + " ";
+      let hasilArray = [];
+      let hasilReverse = "";
+      for (let i = 0; i < params.length; i++) {
+        if (params[i] === " ") {
+          //console.log(hasilReverse);
+          hasilArray.unshift(hasilReverse);
+          hasilReverse = "";
+        } else {
+          hasilReverse = hasilReverse + params[i];
+        }
+      }
+
+      let hasilAkhir = "";
+      hasilArray.map((item) => {
+        hasilAkhir = hasilAkhir + " " + item;
+      });
+      console.log(hasilAkhir);
+    }
   }
-  console.log(hasil);
 };
 
-reverseWords("Saya belajar Javascript")
-
-// let s = "Harry:Potter";
-// let delimiter = ":";
-// let a = s.search(":");
-
-// console.log(s.substring(0, a));
+reverseWords();
+reverseWords(1);
+reverseWords("Saya belajar Javascript");

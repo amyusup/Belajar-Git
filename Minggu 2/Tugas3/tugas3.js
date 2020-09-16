@@ -8,7 +8,7 @@ const cekPrima = (params) => {
         }else if (params == 1) {
           pembagi = 2;
         } else if (params % i == 0) {
-          console.log(i);
+          console.log(`- Bilangan pembagi = ${i}`);
           pembagi = pembagi + 1;
         }
       }
@@ -72,5 +72,7 @@ const check = (params, metode, callback) => {
   }
 };
 
-check(3, "TRYCATCH", cekPrima);
-check(6, "TRYCATCH", cekGanjilGenap);
+check();
+check("3", "TRYCATCH", cekPrima);
+check(4, "TRYCATCH", cekPrima);
+check(3, "thencatch", cekGanjilGenap);
