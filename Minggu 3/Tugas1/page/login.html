@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link href='/assets/css/style.css' rel='stylesheet'>
+  <link href='/assets/css/login.css' rel='stylesheet'>
+  <meta name="Description" content="Zwallet">
+</head>
+
+<body class="main-bg h-100">
+  <div class="container-fluid h-100 ">
+    <div class="row h-100 ">
+      <div class="bg-wave d-none d-sm-block col-md-12  col-lg-7 text-white  ">
+        <div class="pl-5 pt-3 h3 ">Zwallet</div>
+        <div class="d-flex justify-content-center">
+          <img src="/assets/image/phone.svg" class="image-responsive " alt="phone-image" />
+        </div>
+        <div class=" text-left px-5 mx-5 pb-3">
+          <h5>App that Covering Banking Needs.</h4>
+        </div>
+        <div class=" text-left px-5 mx-5">
+          Zwallet is an application that focussing in banking needs for all
+          users in the world. Always updated and always following world
+          trends. 5000+ users registered in Zwallet everyday with worldwide
+          users coverage.
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 p-5  w-100">
+        <div class="pr-5">
+          <div class="text-left h4">
+            Start Accessing Banking Needs With All Devices and All Platforms
+            With 30.000+ Users
+          </div>
+          <p class="text-left nunito-grey">
+            Transfering money is eassier than ever, you can access Zwallet
+            wherever you are. Desktop, laptop, mobile phone? we cover all of
+            that for you!
+          </p>
+          <form action="home.html">
+
+            <div class="input-group mt-5">
+              <label for="email" class="text-white">a</label>
+
+              <input type="email" name="email" id="email" class="form-control form-group form-login flat-form"
+                placeholder="Email" />
+            </div>
+            <div class="input-group mt-5">
+              <label for="password" class="text-white">a</label>
+
+              <input type="password" name="password" id="password" class="form-control form-group form-login flat-form"
+                placeholder="Password" />
+              <img src="/assets/image/eye-crossed.svg" onclick="myFunction()" alt="showpassword" class="show-password">
+            </div>
+            <small class="d-flex flex-row-reverse p-3 ">
+              <a href="">Forgot password ?</a>
+            </small>
+            <button type="submit" name="btLogin" class="btn bt-login w-100 mt-5">Login</button>
+            <div class="text-center mt-3 ">
+              Don't have an account ? Let's &nbsp;<a class="primary-zwallet" href=""> Sign Up</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("password");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

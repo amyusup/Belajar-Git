@@ -22,4 +22,5 @@ palindrom = (kata) => {
 
 palindrom();
 palindrom(1);
+palindrom("Siang");
 palindrom("Malam");

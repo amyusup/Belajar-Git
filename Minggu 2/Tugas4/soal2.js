@@ -8,9 +8,9 @@ reverseWords = (params) => {
       params = params + " ";
       let hasilArray = [];
       let hasilReverse = "";
+
       for (let i = 0; i < params.length; i++) {
         if (params[i] === " ") {
-          //console.log(hasilReverse);
           hasilArray.unshift(hasilReverse);
           hasilReverse = "";
         } else {

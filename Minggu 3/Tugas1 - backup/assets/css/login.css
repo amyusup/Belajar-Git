@@ -1,0 +1,15 @@
+input[type="email"].form-login {
+    background: url(../image/email.svg) no-repeat 5px 1px;
+    padding-left: 45px;
+  }
+  
+  input[type="text"].form-login,
+  input[type="password"].form-login {
+    background: url(../image/pass.svg) no-repeat 5px 1px;
+    padding-left: 45px;
+  }
+
+  .show-password{
+      position: absolute;
+      right: 0;
+  }

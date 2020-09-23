@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+       body {
+        margin: 0px;
+      }
+      /* .container {
+        display: flex;
+      }
+      .item {
+        flex: 1;
+      } */
+      .img {
+        width: 100%;
+      }
+      .card {
+        box-shadow: #00000033 2px 0 15px;
+        margin: 15;
+        border-radius: 10px;
+        overflow: hidden;
+        /* padding: 15 */
+      }
+      .card-description {
+        padding: 15
+      }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="data:image/jpeg;base64,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" width="30" height="30" alt="">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div>
+
+      <div class="container">
+          <div class="row">
+              <div class="col-1 col-sm-3 col-md-2">
+                <div class="card">
+                    <div>
+                      <img
+                        class="img"
+                        src="https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988__340.jpg"
+                      />
+                    </div>
+                    <div class="desc">
+                      <h6>Pegunungan</h6>
+                      <p>Pegunungan Himalaya</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

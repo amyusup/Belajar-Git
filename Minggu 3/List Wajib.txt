@@ -1,0 +1,7 @@
+home
+history
+transfer
+confirmation
+input bank
+succes
+login
